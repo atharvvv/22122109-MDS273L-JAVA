@@ -9,15 +9,13 @@ public class LAB2 {
         
         String[] names = new String[1048];
         int k = 0;
-       
         int c =0;
-        System.out.println("press 0 to start");
         Scanner scan = new Scanner(System.in);
        
 
         do{
             System.out.println("1.Enter a name  ");
-            System.out.println("2. Remove");
+            System.out.println("2. Remove the name");
             System.out.println("3.Search for name");
             System.out.println("4.Search all name");
     
@@ -38,7 +36,7 @@ public class LAB2 {
                                       
                                         
                         case 2:
-                        System.out.println("Enter the name you want to search ");
+                        System.out.println("Enter the element to delete");
                         String name3 = myobj.nextLine();
                         int m=0;
                         for(int i =0; i<c;i++){
