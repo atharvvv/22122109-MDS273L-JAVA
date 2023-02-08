@@ -27,10 +27,21 @@ public class LAB2 {
             int Usersdetails = Integer.parseInt(myobj.nextLine());
                     switch(Usersdetails){
                         case 1:
+                            int key = 1;
                             System.out.println("Enter your name ");
-                            names[c] = scan.nextLine();
-                            c++;
-                            
+                            String name = scan.nextLine();
+                            for(int i = 0;i<=c;i++){
+                                if(names[i] == null) break;
+                                if(names[i].equals(name)){
+                                    key =0;
+                                    System.out.println("this name already exist");
+                                }
+                            }
+                            if(key == 1){
+                                names[c] = name;
+                                c++;
+                            }
+                                                        
                             
                             break;
                                       
@@ -56,13 +67,18 @@ public class LAB2 {
                             for(int i =0; i<c;i++)
                             {
                                 if(names[i].equals(name2)){
-                                    System.out.println("Name already exists at" +names[i] + " index "+ +i);
+                                    System.out.println("Name  exists at " +names[i] + " index " + +i);
                                 }
                            
                         } break;
                          case 4 : 
                             for(int i =0; i<c;i++){
-                                System.out.println(names[i]);
+
+                                if(names[i] == null) break;
+                                else{
+                                    System.out.println(names[i]);
+                                }
+                                 
                             }
                                
                          }
