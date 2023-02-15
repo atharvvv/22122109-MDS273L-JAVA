@@ -1,3 +1,12 @@
+## Name: Atharva Vetal
+## Registration no: 22122109
+## Lab 3
+
+
+## Description of program: 
+Java program to calculate Mean , Median and Mode using functions and user input array
+
+## Code snippet:
 import java.util.Scanner;
 
 public class lab3 {
@@ -46,6 +55,8 @@ public class lab3 {
             m = newarray1[((newarray1.length+1)/2)-1];
         } return m;
         
+
+
        
 
 
@@ -108,3 +119,54 @@ public class lab3 {
     }
 
 }
+
+
+## Code Output:
+Enter the size of your array
+5               
+**************************************************************
+enter the new value  you want to print
+1
+enter the new value  you want to print
+3
+enter the new value  you want to print
+4
+enter the new value  you want to print
+4
+enter the new value  you want to print
+4
+===========================================
+================MENU FOR CALCULATION=======
+===========================================
+Menu to Calculate Mean , Median and Mode
+Press 1. to Calculate mean
+Press 2. to Calculate mode
+Press 3. to Calculate medium
+1
+====================================CALCULATION FOR MEAN , MEDIAN AND MODE=========================================================
+Mean of the array is 3.0
+print 0 to exit or 1 to continue
+1
+===========================================
+================MENU FOR CALCULATION=======
+===========================================
+Menu to Calculate Mean , Median and Mode
+Press 1. to Calculate mean
+Press 2. to Calculate mode
+Press 3. to Calculate medium
+2
+====================================CALCULATION FOR MEAN , MEDIAN AND MODE=========================================================
+Mode of the array is 4
+print 0 to exit or 1 to continue
+1
+===========================================
+================MENU FOR CALCULATION=======
+===========================================
+Menu to Calculate Mean , Median and Mode
+Press 1. to Calculate mean
+Press 2. to Calculate mode
+Press 3. to Calculate medium
+3
+====================================CALCULATION FOR MEAN , MEDIAN AND MODE=========================================================
+Median of the array is 4
+print 0 to exit or 1 to continue
