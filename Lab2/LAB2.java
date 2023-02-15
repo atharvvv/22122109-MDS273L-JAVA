@@ -85,6 +85,7 @@ public class LAB2 {
                                      
                         System.out.println("do you want to continue press 1 or 0  ");
 
+                        
                         k = Integer.parseInt(myobj.nextLine());
                         } while(k==1);
                     } 
