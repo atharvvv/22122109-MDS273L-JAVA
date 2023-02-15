@@ -5,6 +5,8 @@
 
 ## Description of program: 
 Java program to calculate Mean , Median and Mode using functions and user input array
+## Flowchart
+![22122109 lab3 drawio](https://user-images.githubusercontent.com/73079283/219019318-6abba34c-1518-4adc-addf-b10278600af1.png)
 
 ## Code snippet:
 import java.util.Scanner;
