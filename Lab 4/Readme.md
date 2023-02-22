@@ -20,6 +20,10 @@ Account Balance
 .To print the transactions
 .To print account summary
 
+## Flowchart
+![lab 4 drawio](https://user-images.githubusercontent.com/73079283/220647323-d5b9fc15-72e0-487e-b6f7-045af21f80ba.png)
+
+
 
 
 ## Code :
