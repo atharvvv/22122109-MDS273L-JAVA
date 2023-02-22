@@ -1,3 +1,30 @@
+## Name : Atharva Vetal
+## Reg : 22122109
+## Lab : 4
+
+## Aim : 
+Write a JAVA Menu driven program that does the following:
+1)You can ONLY have the below variables as global variables
+.Account Number
+Account Holder Name
+Account Balance
+2)You MUST have the below as functions
+.To initialize the customer
+.To deposit money
+.To withdraw money
+.To print the transactions
+.To print account summary
+.Your menu will have the following operations once the customer is created
+.To deposit money
+.To withdraw money
+.To print the transactions
+.To print account summary
+
+
+
+## Code :
+
+```
 import java.util.*;
 public class lab4 {
   public static Scanner scan = new Scanner(System.in);
@@ -102,9 +129,74 @@ public class lab4 {
         summary();
         break;
       }
-      System.out.println("PRESS 0 to exit , Or other key");
+      System.out.println("PRESS 0 to exit, Or other key");
       cont = scan.nextInt();
 
     } while (cont != 0);
   }
 }
+```
+## Output
+
+```
+Enter your name:
+atharva
+Enter your account balance:
+10000
+Enter your account number:
+1234
+Christ University National Bank
+1. Deposit Money
+2. Withdraw Money
+3. Print transactions
+4. Print account summary
+1
+Enter the amount you want to deposit:
+100
+Amount deposited Successfully!
+PRESS 0 to exit , Or other key
+1
+Christ University National Bank
+1. Deposit Money
+2. Withdraw Money
+3. Print transactions
+4. Print account summary
+2
+Enter the amount you want to withdraw:
+100
+Amount withdrawn Successfully!
+PRESS 0 to exit , Or other key
+1
+Christ University National Bank
+1. Deposit Money
+2. Withdraw Money
+3. Print transactions
+4. Print account summary
+3
+          TRANSACTION SHEET
+T.No|Balance|Trans.Type|  Amt  | FinalBal.|
+_________________________________________
+|1 || 10000||  Deposits || 100 || 10100|
+_________________________________________
+|2 || 10100||  Withdraw || 100 || 10000|
+_________________________________________
+PRESS 0 to exit , Or other key
+4
+Christ University National Bank
+1. Deposit Money
+2. Withdraw Money
+3. Print transactions
+4. Print account summary
+4
+============================
+    BANK ACCOUNT SUMMARY
+============================
+Account holder name: atharva
+____________________________
+Account number: 1234
+____________________________
+Balance remaining: 10000
+============================
+PRESS 0 to exit , Or other key
+```
+
