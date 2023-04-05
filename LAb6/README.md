@@ -410,3 +410,9 @@ Last Five Character Counts:
 9: 0
 ```
 ## Flowchart Diagram:
+
+
+![Lab_6_java](https://user-images.githubusercontent.com/73079283/230177507-2a77f413-4ea2-4d60-833c-ad22822e0e96.png)
+
+
+
