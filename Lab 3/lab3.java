@@ -14,7 +14,7 @@ public class lab3 {
         return mean; 
     }
 
-    static int modefunc(int[] newarray1) { //Function to calculate mode
+    static int modefunc(int [] newarray1) { //Function to calculate mode
         int maxValue = 0;
         int maxCount = 0, i, j;
 

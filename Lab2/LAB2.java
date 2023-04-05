@@ -15,7 +15,7 @@ public class LAB2 {
 
         do{
             System.out.println("1.Enter a name  ");
-            System.out.println("2. Remove the name");
+            System.out.println("2.Remove the name");
             System.out.println("3.Search for name");
             System.out.println("4.Search all name");
     

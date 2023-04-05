@@ -1,0 +1,7 @@
+Write a JAVA program that reads a file (text file) and finds the following details.
+Vowels and their count. Eg
+Digits and their count
+Top Five repeated words and their count.
+Least Five repeated words and their count.
+Top Five repeated characters and their count.
+Least FIve repeated characters and their count.
