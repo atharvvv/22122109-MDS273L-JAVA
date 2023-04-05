@@ -358,7 +358,7 @@ public class lab6 {
 }
 
 ## Code Output:
-Vowel Counts:
+``Vowel Counts:
 a: 357
 e: 504
 i: 360
@@ -406,6 +406,6 @@ Last Five Character Counts:
 6: 2
 7: 4
 8: 2
-9: 0
+9: 0``
 
 ## Flowchart Diagram:
