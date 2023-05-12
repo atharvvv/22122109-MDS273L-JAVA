@@ -2,6 +2,7 @@ import java.io.File;
 import java.nio.channels.NetworkChannel;
 import java.util.Scanner;
 import java.util.Arrays;
+import java.io.FileWriter;
 
 
 public class lab7 {
@@ -306,6 +307,173 @@ public class lab7 {
              System.out.println("Petal Length  "+minimum(virgi_petal_length));  
              System.out.println("Petal Width   "+minimum(virgi_petal_width));
              System.out.println("______________________________________________________________________");
+
+            FileWriter fWriter = new FileWriter("Iris.txt");
+
+           fWriter.write("****************************************************************************************************************************\n");
+           fWriter.write("                                                    MEAN           \n                                                                                                        ");
+           fWriter.write("****************************************************************************************************************************\n");
+           fWriter.write("==================================================== \n");
+           fWriter.write("Mean of sepal width :  ");
+           fWriter.write((int) mean_sw +"\n");
+           fWriter.write("==================================================== \n");
+           fWriter.write("Mean of sepal length :  ");
+           fWriter.write((int) mean_sl +"\n");
+           fWriter.write("==================================================== \n");
+            fWriter.write("Mean of petal length :  ");
+           fWriter.write(mean_pl +"\n");
+           fWriter.write("==================================================== \n");
+            fWriter.write("Mean of petal width :  ");
+           fWriter.write(mean_pw +"\n");
+           fWriter.write("==================================================== \n");
+           fWriter.write("**************************************************************************************************************************** \n");
+           fWriter.write("                                                    MEDIAN                                                          \n                                                         ");
+           fWriter.write("**************************************************************************************************************************** \n");
+            fWriter.write("Median of sepal width :  ");
+           fWriter.write(median_sw +"\n");
+           fWriter.write("==================================================== \n");
+            fWriter.write("Median of sepal length :  ");
+           fWriter.write(median_sl +"\n");
+           fWriter.write("==================================================== \n");
+            fWriter.write("Median of petal length :  ");
+           fWriter.write(median_pl +"\n");
+           fWriter.write("==================================================== \n");
+            fWriter.write("Median of petal width :  ");
+           fWriter.write(median_pw +"\n");
+           fWriter.write("==================================================== \n");
+           fWriter.write("**************************************************************************************************************************** \n");
+           fWriter.write("                                                    MODE                                                           \n                                                   ");
+           fWriter.write("**************************************************************************************************************************** \n");
+            fWriter.write("Mode of sepal width :  ");
+           fWriter.write(mode_sw +"\n"); 
+           fWriter.write("==================================================== \n");
+            fWriter.write("Mode of sepal length :  ");
+           fWriter.write(mode_sl +"\n");
+           fWriter.write("==================================================== \n");
+            fWriter.write("Mode of petal length :  ");
+           fWriter.write((int) mode_pl);
+           fWriter.write("==================================================== \n");
+            fWriter.write("Mode of petal length :  ");
+           fWriter.write((int) mode_pw);
+           fWriter.write("==================================================== \n");
+           fWriter.write("**************************************************************************************************************************** \n");
+           fWriter.write("                                                    MAXIMUM                                      \n                                                                        ");
+           fWriter.write("**************************************************************************************************************************** \n");
+            fWriter.write("Max of sepal width  :  ");
+           fWriter.write(Max_sw +"\n");
+           fWriter.write("==================================================== \n");
+            fWriter.write("Max of speal length :  ");
+           fWriter.write((int) Max_sl);
+           fWriter.write("==================================================== \n");
+            fWriter.write("Max of petal length :  ");
+           fWriter.write(Max_pl +"\n");
+           fWriter.write("==================================================== \n");
+            fWriter.write("Max of petal width :  ");
+           fWriter.write(Max_pw +"\n");
+           fWriter.write("==================================================== \n");
+           fWriter.write("**************************************************************************************************************************** \n");
+           fWriter.write("                                                    MINIMUM       \n                                                                                                      ");
+           fWriter.write("**************************************************************************************************************************** \n");
+            fWriter.write("Min of sepal width :  ");
+           fWriter.write((int) Min_sw);
+           fWriter.write("==================================================== \n");
+            fWriter.write("Min of sepal length :  ");
+           fWriter.write(Min_sl +"\n");
+           fWriter.write("==================================================== \n");
+            fWriter.write("Min of petal length :  ");
+           fWriter.write(Min_pl +"\n");
+           fWriter.write("==================================================== \n");
+          fWriter.write("Min of petal width :  " );
+           fWriter.write(Min_pw +"\n");
+
+           
+          fWriter.write("====================================================================== \n");
+          fWriter.write("                       FIVE NUMBER SUMMARY(versicolor)           \n              ");
+          fWriter.write("====================================================================== \n");
+          fWriter.write("  MEAN for versicolor  \n ");
+          fWriter.write("______________________________________________________________________\n");
+          fWriter.write("Sepal Length \n  "+mean(versi_sepal_length));
+          fWriter.write("Sepal Width  \n  "+mean(versi_sepal_width));      
+          fWriter.write("Petal Length  \n  "+mean(versi_petal_length));  
+          fWriter.write("Petal Width   \n "+mean(versi_petal_width));
+          fWriter.write("______________________________________________________________________ \n");
+
+          fWriter.write("  Median for versicolor \n   ");
+          fWriter.write("______________________________________________________________________ \n");
+          fWriter.write("Sepal Length \n  "+median(versi_sepal_length));
+          fWriter.write("Sepal Width  \n "+median(versi_sepal_width));      
+          fWriter.write("Petal Length \n  "+median(versi_petal_length));  
+          fWriter.write("Petal Length \n  "+median(versi_petal_length));  
+          fWriter.write("Petal Width  \n  "+median(versi_petal_width));
+          fWriter.write("______________________________________________________________________ \n");
+
+          fWriter.write("  Mode for versicolor  \n ");
+          fWriter.write("______________________________________________________________________ \n");
+          fWriter.write("Sepal Length \n  "+mode(versi_sepal_length));
+          fWriter.write("Sepal Width   \n "+mode(versi_sepal_width));      
+          fWriter.write("Petal Length  \n "+mode(versi_petal_length));  
+          fWriter.write("Petal Width \n  "+mode(versi_petal_width));
+          fWriter.write("______________________________________________________________________ \n");
+           
+          fWriter.write("  Maximum for versicolor \n  ");
+          fWriter.write("______________________________________________________________________");
+          fWriter.write("Sepal Length  \n "+maximum(versi_sepal_length));
+          fWriter.write("Sepal Width  \n  "+maximum(versi_sepal_width));      
+          fWriter.write("Petal Length  \n "+maximum(versi_petal_length));  
+          fWriter.write("Petal Width   \n "+maximum(versi_petal_width));
+          fWriter.write("______________________________________________________________________ \n ");
+          fWriter.write("  Minimum for versicolor  \n ");
+          fWriter.write("______________________________________________________________________");
+          fWriter.write("Sepal Length \n "+minimum(versi_sepal_length));
+          fWriter.write("Sepal Width \n  "+minimum(versi_sepal_width));      
+          fWriter.write("Petal Length \n "+minimum(versi_petal_length));  
+          fWriter.write("Petal Width  \n "+minimum(versi_petal_width));
+          fWriter.write("______________________________________________________________________  \n ");
+           
+          fWriter.write("====================================================================== \n");
+          fWriter.write("                       FIVE NUMBER SUMMARY(verginica)            \n             ");
+          fWriter.write("====================================================================== \n");
+          fWriter.write("  MEAN for verginica \n  ");
+          fWriter.write("______________________________________________________________________ \n");
+          fWriter.write("Sepal Length \n "+mean(virgi_sepal_length));
+          fWriter.write("Sepal Width \n  "+mean(virgi_sepal_width));      
+          fWriter.write("Petal Length \n "+mean(virgi_petal_length));  
+          fWriter.write("Petal Width  \n "+mean(virgi_petal_width));
+          fWriter.write("______________________________________________________________________ \n");
+
+          fWriter.write("  Median for verginica   ");
+          fWriter.write("______________________________________________________________________");
+          fWriter.write("Sepal Length  "+median(virgi_sepal_length));
+          fWriter.write("Sepal Width   "+median(virgi_sepal_width));      
+          fWriter.write("Petal Length  "+median(versi_petal_length));  
+          fWriter.write("Petal Width   "+median(virgi_petal_width));
+          fWriter.write("______________________________________________________________________");
+
+          fWriter.write("  Mode for verginica \n  ");
+          fWriter.write("______________________________________________________________________ \n");
+          fWriter.write("Sepal Length \n  "+mode(virgi_sepal_length));
+          fWriter.write("Sepal Width  \n  "+mode(virgi_sepal_width));      
+          fWriter.write("Petal Length  \n "+mode(virgi_petal_length));  
+          fWriter.write("Petal Width  \n "+mode(virgi_petal_width));
+          fWriter.write("______________________________________________________________________ \n");
+           
+          fWriter.write("  Maximum for verginica  \n ");
+          fWriter.write("______________________________________________________________________ \n");
+          fWriter.write("Sepal Length \n  "+maximum(virgi_sepal_length));
+          fWriter.write("Sepal Width  \n "+maximum(virgi_sepal_width));      
+          fWriter.write("Petal Length \n "+maximum(virgi_petal_length));  
+          fWriter.write("Petal Width  \n "+maximum(virgi_petal_width));
+          fWriter.write("______________________________________________________________________ \n");
+          fWriter.write("  Minimum for verginica \n    ");
+          fWriter.write("______________________________________________________________________ \n");
+          fWriter.write("Sepal Length \n "+minimum(virgi_sepal_length));
+          fWriter.write("Sepal Width  \n "+minimum(virgi_sepal_width));      
+          fWriter.write("Petal Length \n "+minimum(virgi_petal_length));  
+          fWriter.write("Petal Width  \n "+minimum(virgi_petal_width));
+          fWriter.write("______________________________________________________________________ \n");
+
+          
+ 
              
              
              

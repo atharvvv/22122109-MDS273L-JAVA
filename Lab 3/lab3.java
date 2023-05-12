@@ -2,26 +2,26 @@ import java.util.Scanner;
 
 public class lab3 {
 
-    static float meanfunc(int[] newarray1) { //function to calculate mean
+    static float meanfunc(int[] newarray1) { // function to calculate mean
         int sum = 0, count = 0;
         float mean = 0;
-        for (int i = 0; i < newarray1.length; i++) {  //take a for loop to itterate through every element and add
+        for (int i = 0; i < newarray1.length; i++) { // take a for loop to itterate through every element and add
             sum += newarray1[i]; // sum if element
             count++;
-            mean = (sum / count); //To calculate mean
+            mean = (sum / count); // To calculate mean
 
         }
-        return mean; 
+        return mean;
     }
 
-    static int modefunc(int [] newarray1) { //Function to calculate mode
+    static int modefunc(int[] newarray1) { // Function to calculate mode
         int maxValue = 0;
         int maxCount = 0, i, j;
 
-        for (i = 0; i < newarray1.length; ++i) { //Taking first loop to choose element from array
+        for (i = 0; i < newarray1.length; ++i) { // Taking first loop to choose element from array
             int count = 0;
 
-            for (j = 0; j < newarray1.length; ++j) { //Taking second loop to compare elements in array
+            for (j = 0; j < newarray1.length; ++j) { // Taking second loop to compare elements in array
 
                 if (newarray1[j] == newarray1[i]) {
                     ++count;
@@ -30,7 +30,7 @@ public class lab3 {
                 if (count > maxCount) {
                     maxCount = count;
                     maxValue = newarray1[i];
-                    
+
                 }
 
             }
@@ -38,17 +38,15 @@ public class lab3 {
         return maxValue;
 
     }
-    static int medianfunc(int[] newarray1) { //Taking function to calculate median
-        int m=0;
-        if(newarray1.length%2==0){
-            m = newarray1[(newarray1.length/2)-1]; //to choose middle element from array
-        }else{
-            m = newarray1[((newarray1.length+1)/2)-1];
-        } return m;
-        
-       
 
-
+    static int medianfunc(int[] newarray1) { // Taking function to calculate median
+        int m = 0;
+        if (newarray1.length % 2 == 0) {
+            m = newarray1[(newarray1.length / 2) - 1]; // to choose middle element from array
+        } else {
+            m = newarray1[((newarray1.length + 1) / 2) - 1];
+        }
+        return m;
 
     }
 
@@ -60,39 +58,36 @@ public class lab3 {
         int sizenumber = myobj.nextInt();
         System.out.println("**************************************************************");
 
-
-        int newarray1[] = new int[sizenumber];   // intializing empty array with element size
-        for (int i = 0; i < newarray1.length; i++) {   //for loop to itterate through empty array
+        int newarray1[] = new int[sizenumber]; // intializing empty array with element size
+        for (int i = 0; i < newarray1.length; i++) { // for loop to itterate through empty array
             System.out.println("enter the new value  you want to print");
             newarray1[i] = myobj.nextInt(); // user input array
         }
 
-        do {  // take do while loop
-            
+        do { // take do while loop
+
             System.out.println("===========================================");
             System.out.println("================MENU FOR CALCULATION=======");
             System.out.println("===========================================");
-         
-
-
 
             System.out.println("Menu to Calculate Mean , Median and Mode"); // meanu to choose mean median and mode
-            System.out.println("Press 1. to Calculate mean"); 
+            System.out.println("Press 1. to Calculate mean");
             System.out.println("Press 2. to Calculate mode");
             System.out.println("Press 3. to Calculate medium");
             int selectmeanu = myobj.nextInt();
-            System.out.println("====================================CALCULATION FOR MEAN , MEDIAN AND MODE=========================================================");
-            switch (selectmeanu) {   //Swtich statement to choose what to do
+            System.out.println(
+                    "====================================CALCULATION FOR MEAN , MEDIAN AND MODE=========================================================");
+            switch (selectmeanu) { // Swtich statement to choose what to do
                 case 1:
-                    System.out.println("Mean of the array is " +meanfunc(newarray1)); // to call mean function
+                    System.out.println("Mean of the array is " + meanfunc(newarray1)); // to call mean function
                     break;
 
                 case 2:
-                    System.out.println("Mode of the array is " +modefunc(newarray1)); // to call mode function
+                    System.out.println("Mode of the array is " + modefunc(newarray1)); // to call mode function
                     break;
 
                 case 3:
-                System.out.println("Median of the array is " +medianfunc(newarray1)); // to call median function
+                    System.out.println("Median of the array is " + medianfunc(newarray1)); // to call median function
                     break;
 
                 case 4:

@@ -4,9 +4,9 @@ public class LAB1 {
     public static void main(String[] args) {
         Scanner newobj = new Scanner(System.in);
         System.out.print("Enter your name ");
-        String name  = newobj.nextLine();
+        String name = newobj.nextLine();
         System.out.print("Enter your Age ");
-      
+
         int Age = Integer.parseInt(newobj.nextLine());
         System.out.print("Enter your class ");
         String myclass = newobj.nextLine();
@@ -16,121 +16,115 @@ public class LAB1 {
         System.out.println("Enter the state");
         String state = newobj.nextLine();
 
-       
-       
-
         System.out.println("********* Users details******************");
 
-        System.out.println("Users name is " +name);
-        System.out.println("Users Age is " +Age);
-        System.out.println("Users class is " +myclass);
-        System.out.println("Users State is " +state);
+        System.out.println("Users name is " + name);
+        System.out.println("Users Age is " + Age);
+        System.out.println("Users class is " + myclass);
+        System.out.println("Users State is " + state);
 
+        if (mygender == 'm') {
+            System.out.println("Gender : Male");
 
-    
-
-        if(mygender == 'm'){
-            System.out.println( "Gender : Male");
-
-        }else if(mygender == 'f'){
+        } else if (mygender == 'f') {
             System.out.println("Gender : Female");
-        }else{
+        } else {
             System.out.println("please enter m or f only");
         }
 
-      
-
-
-    
-      
-        switch(state){
-            case "Chandigarh" :{
+        switch (state) {
+            case "Chandigarh": {
                 System.out.println("Region : North");
                 break;
             }
 
-            case "Delhi":{
+            case "Delhi": {
                 System.out.println("Region : North");
                 break;
             }
 
-            case "Haryana":{
+            case "Haryana": {
                 System.out.println("Region : North");
                 break;
             }
-            case "Jammu kashmir":{
+            case "Jammu kashmir": {
                 System.out.println("Region : North");
                 break;
             }
-            case "Karnataka":{
+            case "Karnataka": {
                 System.out.println("Region : South");
                 break;
             }
-            case "Kerala":{
+            case "Kerala": {
                 System.out.println("Region : South");
                 break;
             }
-            case "Andhra Pradesh":{
+            case "Andhra Pradesh": {
                 System.out.println("Region : South");
                 break;
             }
-            case "Telangana":{
+            case "Telangana": {
                 System.out.println("Region : South");
                 break;
             }
-            case "Arunachal Pradesh":{
+            case "Arunachal Pradesh": {
                 System.out.println("Region : East");
                 break;
             }
-            case "Mizoram":{
+            case "Mizoram": {
                 System.out.println("Region : East");
                 break;
             }
-            case "Odisha":{
+            case "Odisha": {
                 System.out.println("Region : East");
                 break;
             }
-            case "Jharkhand":{
+            case "Jharkhand": {
                 System.out.println("Region : East ");
                 break;
             }
-            case "AndhraPradesh":{
+            case "AndhraPradesh": {
                 System.out.println("Region : East ");
                 break;
             }
-            case "Bihar" :{
-                System.out.println("Region : East ");
-                break;
-
-            }
-            case "Nagaland" :{
+            case "Bihar": {
                 System.out.println("Region : East ");
                 break;
 
             }
-            case "Assam" :{
+            case "Nagaland": {
                 System.out.println("Region : East ");
                 break;
 
             }
-            
-          
-          
-           
+            case "Assam": {
+                System.out.println("Region : East ");
+                break;
+
+            }
+            case "Gujrat": {
+                System.out.println("Region : West ");
+                break;
+
+            }
+            case "Goa": {
+                System.out.println("Region : West ");
+                break;
+
+            }
+            case "Rajasthan": {
+                System.out.println("Region : West ");
+                break;
+
+            }
+            case "Maharashra": {
+                System.out.println("Region : West ");
+                break;
+
+            }
+
         }
 
-
-
-
-
-
-     
-
-        
-
-
-
-
     }
-    
+
 }
