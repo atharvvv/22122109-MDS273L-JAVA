@@ -18,7 +18,7 @@ public class lab6 {
 
         System.out.println("Number Counts:");
         for (int i = 0; i < numberCounts.length; i++) {
-            System.out.println(i + ": " + numberCounts[i]);
+        System.out.println(i + ": " + numberCounts[i]);
         }
 
         String result = findTopWords(fileName);
