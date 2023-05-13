@@ -124,6 +124,7 @@ public class lab3 {
 
 
 ## Code Output:
+```
 Enter the size of your array
 5               
 **************************************************************
@@ -172,6 +173,7 @@ Press 3. to Calculate medium
 ====================================CALCULATION FOR MEAN , MEDIAN AND MODE=========================================================
 Median of the array is 4
 print 0 to exit or 1 to continue
+```
 
 
 22122109 lab3.drawio.png
